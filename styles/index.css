@@ -1,17 +1,43 @@
 body {
     margin: 0;
-    background-color: rgba(181, 181, 3, 0.793);
+    background-color: #10162e;
     text-align: center;
 }
-main {
-    margin: 20px;
+header {
+    width: 100%;
+    background-color: #10162e;
 }
-
-h1 {
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+}
+.header-inner h1 {
+    margin: 0;
+    padding: 0 1rem;
     text-align: center;
     color: olive;
-    background-color: rgb(0, 0, 0);
-} 
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    line-height: 1;
+}
+.page-wrapper {
+    width: 100%;
+    background-color: rgba(225, 225, 0, 0.793);
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+main {
+    margin: 0 20px 20px;
+}
+@media (min-width: 1200px) {
+    .page-wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
 
 main p {
     font-size: 17px;
@@ -56,6 +82,7 @@ ol {
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     list-style-position: inside;
+    list-style-type: decimal-leading-zero;
 }
 
 #days {
@@ -71,7 +98,12 @@ ol {
 /* Responsive que me hizo la IA pa' */
 @media (max-width: 600px) {
     body {
-        margin: 0 8px;
+        margin: 0;
+    }
+
+    main {
+        padding: 0 8px;
+        box-sizing: border-box;
     }
 
     h1 {
@@ -99,10 +131,11 @@ ol {
         padding: 1rem;
         margin: 2rem auto;
         box-sizing: border-box;
+        overflow-x: auto;
     }
 
     .register li {
-        overflow-wrap: break-word;
+        white-space: nowrap;
     }
 
     ol {
