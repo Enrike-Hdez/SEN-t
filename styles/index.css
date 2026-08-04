@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: rgba(181, 181, 3, 0.793);
+    text-align: center;
+}
+main {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: olive;
+    background-color: rgb(0, 0, 0);
+} 
+
+main p {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    border: solid 2px black;
+    padding: 8rem;
+
+}
+footer {
+    font-size: 12px;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.days {
+    font-size: 110px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.count_days {
+    margin-top: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.more_info { 
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.register {
+    border-left: 5px solid black;
+    padding: 2rem;
+    max-width:300px;
+    margin:3rem auto;
+}
+
+ol {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-position: inside;
+}
+
+#days {
+    font-size: 110px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    padding: 0.3rem 2rem;
+    display:inline-block;
+    border-radius:8px;
+}
+
+
+/* Responsive que me hizo la IA pa' */
+@media (max-width: 600px) {
+    body {
+        margin: 0 8px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .count_days {
+        font-size: 22px;
+        margin-top: 2rem;
+    }
+
+    #days {
+        font-size: 60px;
+    }
+
+    .more_info {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    /* Registro */
+    .register {
+        max-width: 220px;
+        width: 90%;
+        padding: 1rem;
+        margin: 2rem auto;
+        box-sizing: border-box;
+    }
+
+    .register li {
+        overflow-wrap: break-word;
+    }
+
+    ol {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 11px;
+        margin: 20px;
+    }
+}
